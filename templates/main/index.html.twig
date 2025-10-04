@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Menu{% endblock %}
+
+{% block body %}
+    <div>
+    {% for Game in Games %}
+    <a href="{{path:(/Game_Info/{id_game})}}"><div class="Game">
+    <h1 class="title_hover">{{Game_name}}</h1>
+    </div></a>    
+    {% endfor %}
+
+    </div>
+{% endblock %}
